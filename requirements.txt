@@ -5,4 +5,8 @@ langchain-groq
 groq
 python-dotenv
 langchain-community
-# llama-cpp-python --prefer-binary
+pydocstyle
+radon
+pytest-json-report
+plotly
+pandas

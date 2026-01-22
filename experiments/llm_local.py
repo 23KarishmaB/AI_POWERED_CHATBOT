@@ -1,29 +1,29 @@
-# from langchain_community.llms import LlamaCpp
-# from langchain_core.prompts import PromptTemplate
+ from langchain_community.llms import LlamaCpp
+from langchain_core.prompts import PromptTemplate
 
-# MODEL_PATH = r"D:\Mentor\LLM_MODELS\Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf"
+ MODEL_PATH = r"D:\Mentor\LLM_MODELS\Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf"
 
-# # Load model
-# llm = LlamaCpp(
-#     model_path=MODEL_PATH,
-#     n_ctx=2048,
-#     n_threads=8,
-#     n_gpu_layers=0,
-#     temperature=0.3
-# )
+# Load model
+ llm = LlamaCpp(
+   model_path=MODEL_PATH,
+   n_ctx=2048,
+   n_threads=8,
+   n_gpu_layers=0,
+   temperature=0.3
+)
 
 # # Create a prompt template
-# prompt = PromptTemplate.from_template(
-#     "You are a helpful AI teacher.\n\nQuestion: {question}\n\nAnswer step by step:"
-# )
+prompt = PromptTemplate.from_template(
+    "You are a helpful AI teacher.\n\nQuestion: {question}\n\nAnswer step by step:"
+ )
 
 # # ✔️ New LangChain pipeline style
-# chain = prompt | llm
+chain = prompt | llm
 
 # # Run the chain
-# response = chain.invoke({"question": "What is AI?"})
+ response = chain.invoke({"question": "What is AI?"})
 
-# print(response)
+print(response)
 
 
 

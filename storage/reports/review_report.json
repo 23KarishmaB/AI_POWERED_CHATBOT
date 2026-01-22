@@ -1,0 +1,22 @@
+{
+  "aggregate": {
+    "total_functions": 5,
+    "documented": 4,
+    "coverage_percent": 80.0,
+    "meets_threshold": true
+  },
+  "files": [
+    {
+      "file_path": "examples/sample_a.py",
+      "total_functions": 3,
+      "documented": 2,
+      "coverage_percent": 66.7
+    },
+    {
+      "file_path": "examples/sample_b.py",
+      "total_functions": 2,
+      "documented": 2,
+      "coverage_percent": 100.0
+    }
+  ]
+}
